@@ -30,6 +30,7 @@
 #include <Corrade/Utility/Algorithms.h>
 #include <Corrade/Utility/ConfigurationGroup.h>
 #include <Corrade/Utility/Debug.h>
+#include <Corrade/Utility/Macros.h> /* CORRADE_THREAD_LOCAL */
 #include <Magnum/PixelFormat.h>
 #include <Magnum/Trade/ImageData.h>
 
