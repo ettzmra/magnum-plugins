@@ -30,7 +30,6 @@
 #include <Corrade/Utility/Algorithms.h>
 #include <Corrade/Utility/ConfigurationGroup.h>
 #include <Corrade/Utility/Debug.h>
-#include <Corrade/Utility/Macros.h> /* CORRADE_THREAD_LOCAL */
 #include <Magnum/PixelFormat.h>
 #include <Magnum/Trade/ImageData.h>
 
@@ -43,6 +42,7 @@
    Verified in StbImageImporterTest::multithreaded(). */
 #define STBI_NO_THREAD_LOCALS
 #ifdef CORRADE_BUILD_MULTITHREADED
+#include <Corrade/Utility/Macros.h> /* CORRADE_THREAD_LOCAL */
 #define STBI_THREAD_LOCAL CORRADE_THREAD_LOCAL
 #endif
 
